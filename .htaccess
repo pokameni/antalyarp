@@ -14,13 +14,13 @@ RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
 RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^ %{REQUEST_URI}.php [NC,L]
-ErrorDocument 400 https://www.antalyarp.me/error
-ErrorDocument 401 https://www.antalyarp.me/error
-ErrorDocument 402 https://www.antalyarp.me/error
-ErrorDocument 403 https://www.antalyarp.me/error
-ErrorDocument 404 https://www.antalyarp.me/error
-ErrorDocument 500 https://www.antalyarp.me/error
-ErrorDocument 501 https://www.antalyarp.me/error
-ErrorDocument 502 https://www.antalyarp.me/error
-ErrorDocument 503 https://www.antalyarp.me/error
-ErrorDocument 504 https://www.antalyarp.me/error
+ErrorDocument 400 https://www.antalyarp.me/
+ErrorDocument 401 https://www.antalyarp.me/
+ErrorDocument 402 https://www.antalyarp.me/
+ErrorDocument 403 https://www.antalyarp.me/
+ErrorDocument 404 https://www.antalyarp.me/
+ErrorDocument 500 https://www.antalyarp.me/
+ErrorDocument 501 https://www.antalyarp.me/
+ErrorDocument 502 https://www.antalyarp.me/
+ErrorDocument 503 https://www.antalyarp.me/
+ErrorDocument 504 https://www.antalyarp.me/
