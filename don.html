@@ -487,51 +487,5 @@
         }
       }
     </style>
-    <script>
-      // Ouverture du modal au clic sur package__image ou package__buttons
-      const packageElements = document.querySelectorAll(".package__image, .package__buttons");
-
-      packageElements.forEach(element => {
-        element.addEventListener("click", () => {
-          document.getElementById("popup-modal").style.display = "block";
-        });
-      });
-
-      // Fermeture du modal
-      document.querySelector("[data-dismiss='modal']").addEventListener("click", () => {
-        document.getElementById("popup-modal").style.display = "none";
-      });
-
-      // Activation des effets CursorAura
-      const buttons = document.querySelectorAll(".cursorAura");
-      buttons.forEach(button => button.addEventListener("mousemove", e => {
-        const { x, y } = button.getBoundingClientRect();
-        button.style.setProperty("--x", e.clientX - x);
-        button.style.setProperty("--y", e.clientY - y);
-      }));
-    </script>
-    <div class="modal in" id="popup-modal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
-      <div class="modalWrapper">
-          <div class="modal__header">
-              <h2>MON OFFRE</h2>
-              <button type="button" data-dismiss="modal" aria-hidden="true"
-                  class="iconBoxed iconBoxed--rounded btn--dark cursorAura cursorAura--dim">
-                  <i class="fas fa-times"></i>
-              </button>
-          </div>
-          <div class="modal__body markup__body">
-              <p style="text-align:center;"><img src="tkt.jpg" style="width:193px;height:167.599px;" class="fr-fic fr-dib"
-                      width="193" height="167"></p>
-          </div>
-          <div class="modal__footer">
-              <div class="modal__price">
-                  <h3>10.00 EUR</h3>
-                  <div class="modal__buttons">
-                      <a href="monURLpaiement" class="btn btn--primary cursorAura">DONNER</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
   </body>
 </html>
