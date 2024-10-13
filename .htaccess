@@ -1,7 +1,7 @@
 RewriteEngine on
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} !^www\.antalyarp\.me$ [NC]
-RewriteRule ^(.*)$ https://www.antalyarp.me/$1 [L,R=301]
+#RewriteCond %{HTTPS} off [OR]
+#RewriteCond %{HTTP_HOST} !^www\.antalyarp\.me$ [NC]
+#RewriteRule ^(.*)$ https://www.antalyarp.me/$1 [L,R=301]
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
