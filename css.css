@@ -667,6 +667,12 @@
      z-index: 1;
      animation: blurGlow 5s ease-in-out infinite;
 }
+.assetBlurred {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    opacity: .1;
+    animation: blurGlow 5s ease-in-out infinite;
+}
  .header__cart {
      border-radius: var(--border-radius);
      border: var(--border);
